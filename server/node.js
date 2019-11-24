@@ -4,10 +4,10 @@ const PORT = process.env.PORT || 3000;
 const path = require('path');
 
 const app = express();
-app.use(express.static(`${__dirname}/../react-client/dist`));
+app.use(express.static(`${__dirname}/../client/build`));
 
 app.get('*', (req, res) => {
-  res.sendFile(path.resolve(`${__dirname}/client/index.html`));
+  res.sendFile(path.resolve(`${__dirname}/../client/index.html`));
 });
 
 app.listen(PORT, () => {
