@@ -1,0 +1,40 @@
+
+Main Page
+- Login Bar on top (if not logged in)
+- Display Name Bar on top (if logged in)
+- Category Page on bottom
+
+Category Page
+- Categories listed 
+- Sugested items listed. (Later Goal)
+- Each item links to a more info page
+
+Sales Page
+- Processed through database queries. 
+- Category (and eventually other parameters) are querried to show a list
+- Each item links to a more info page
+
+More info Page
+- Renders from database info
+- Shows image, description, price, availability
+
+Help Page
+- Contact us link
+
+Checkout Page
+- If logged 
+    - Confirm items you want. 
+- If not logged in
+    -Prompt login
+
+Products Database
+- Each item contains:
+    - Image
+    - Description
+    - Product Name
+    - Price
+    - Categories (works like tags, can have multiple categories)
+    - Availability info
+- NoSql in case design changes
+
+
