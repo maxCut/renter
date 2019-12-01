@@ -7,10 +7,6 @@ class Login extends Component {
 
         return(
             <div className = "LoginPage">
-                <div id = "ErrorMessage"></div>
-                <div class="imgcontainer">
-                </div>
-
                 <div class="container">
                     <label for="uname"><b>Username</b></label>
                     <input type="text" placeholder="Enter Username" id="username" required></input>
