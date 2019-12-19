@@ -4,12 +4,16 @@ import { browserHistory } from 'react-router';
 import Login from './login.js'; 
 import SignUp from './signup.js'
 import Categories from './categories.js'
+import Header from './header.js'
 
 class App extends Component {
     render()
     {
         return(
             <Router>
+                <header>
+                    <Route exact path = "/" component = {Header}/>
+                </header>
                 <div className = "page-container">
                     <Route exact path = "/" component = {Categories}/>
                     <Route exact path = "/Login" component = {Login}/>
