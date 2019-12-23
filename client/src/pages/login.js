@@ -1,26 +1,45 @@
 import React,{Component} from 'react'
-import { Redirect } from 'react-router-dom'
+import {FirebaseContext} from '../firebase/f_index.js'
+
+const INITIAL_STATE = {
+    username: '',
+    password: ''
+};
 
 class Login extends Component {
+    constructor(props)
+    {
+        super(props)
+        this.state = {INITIAL_STATE};
+    }
+
+    onChange = event => {
+        this.setState({[event.target.name]:event.target.value})
+    }
+
+
     render()
     {
 
         return(
             <div className = "LoginPage">
                 <div class="container">
-                    <label for="uname"><b>Username</b></label>
-                    <input type="text" placeholder="Enter Username" id="username" required></input>
-                    <label for="psw"><b>Password</b></label>
-                    <input type="password" placeholder="Enter Password" id="password" required></input>
-
-                    <button onclick = "firebaseLogin()" id="login-btn">
-                        Login
-                    </button>
-                    <label>
-                    </label>
-                    <a href = "/signup">
-                    New User
-                    </a>
+                    <FirebaseContext.Consumer>
+                        {firebase =>
+                        {
+                            return(
+                            <form>
+                                <label for="uname"><b>Enter Desired Username</b></label>
+                                <input type="text" placeholder="Username" name ="username" onChange={this.onChange}></input>
+                                <label for="uname"><b>Enter Desired Password</b></label>
+                                <input type="password" placeholder="Password" name ="password" onChange = {this.onChange}></input>
+                                <button  onClick = {() => firebase.login(this.state.username,this.state.password)}> 
+                                   Login 
+                                </button>
+                            </form>
+                            )
+                        }}
+                    </FirebaseContext.Consumer>
                 </div>
             </div>
         )
