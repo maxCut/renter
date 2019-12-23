@@ -15,6 +15,9 @@ class App extends Component {
                     <Route exact path = "/" component = {Header}/>
                 </header>
                 <div className = "page-container">
+                    /*
+                     * links paths to pages
+                     */
                     <Route exact path = "/" component = {Categories}/>
                     <Route exact path = "/Login" component = {Login}/>
                     <Route path = "/signup" component = {SignUp}/>

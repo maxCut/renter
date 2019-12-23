@@ -3,6 +3,9 @@ import { Redirect } from 'react-router-dom'
 import TestImg from '../resources/test.png'
 import CategoryImg from '../resources/category.jpg'
 
+/*
+ * formated input representing a category
+ */
 var category_json = 
 {
     "Cooking":{
@@ -19,6 +22,9 @@ class Categories extends Component {
 
     render()
     {
+        /*
+         * creates a list of categories to be used
+         */
         var category_array = [];
         Object.keys(category_json).forEach(function(key)
             {
@@ -29,6 +35,10 @@ class Categories extends Component {
             <div className = "CategoriesPage">
                 <div class="container">
                     <div class ="categories">
+                        /*
+                         * for each item in the list of categories, use the key to look up a label and image. 
+                         * then create an element of type category with relevant params
+                         */
                         {category_array.map(item => <Category name = {item.Label} image = {item.Image}/>)}
                     </div>
                 </div>

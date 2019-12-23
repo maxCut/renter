@@ -4,6 +4,9 @@ import App from './pages/app.js';
 import Firebase, {FirebaseContext} from './firebase/f_index.js'
 
 ReactDOM.render(
+    /*
+     * this provider wll ensure the same instance of the firebase construction is used when we later call consumer
+     */
     <FirebaseContext.Provider value = {new Firebase()}>
         <App />
     </FirebaseContext.Provider>
