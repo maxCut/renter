@@ -35,10 +35,10 @@ class Categories extends Component {
             <div className = "CategoriesPage">
                 <div class="container">
                     <div class ="categories">
-                        /*
+                       {/*
                          * for each item in the list of categories, use the key to look up a label and image. 
                          * then create an element of type category with relevant params
-                         */
+                         */}
                         {category_array.map(item => <Category name = {item.Label} image = {item.Image}/>)}
                     </div>
                 </div>

@@ -35,10 +35,11 @@ class Login extends Component {
         return(
             <div className = "LoginPage">
                 <div class="container">
-                    /*
+                    
+                    {/*
                      * The consumer context allows us to use the same firebase instance created by the providor. 
                      * (allows firebase constructor to be called just once)
-                     */
+                     */}
                     <FirebaseContext.Consumer>
                         {firebase =>
                         {

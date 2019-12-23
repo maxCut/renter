@@ -1,15 +1,16 @@
 import React,{Component} from 'react'
 
-class Header extends Component {
+class UnauthedHeader extends Component {
     render()
     {
         return(
             <div className = "Header">
                 <p>Welcome!</p>
+                <a href = '/login'>Login</a>
             </div>
         )
     
     }
 
 }
-export default Header;
+export default UnauthedHeader;

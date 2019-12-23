@@ -4,7 +4,7 @@ import { browserHistory } from 'react-router';
 import Login from './login.js'; 
 import SignUp from './signup.js'
 import Categories from './categories.js'
-import Header from './header.js'
+import Header from './header/header.js'
 
 class App extends Component {
     render()
@@ -15,9 +15,6 @@ class App extends Component {
                     <Route exact path = "/" component = {Header}/>
                 </header>
                 <div className = "page-container">
-                    /*
-                     * links paths to pages
-                     */
                     <Route exact path = "/" component = {Categories}/>
                     <Route exact path = "/Login" component = {Login}/>
                     <Route path = "/signup" component = {SignUp}/>
