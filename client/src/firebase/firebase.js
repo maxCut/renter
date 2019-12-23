@@ -21,14 +21,18 @@ class Firebase {
 
     signup = (email,password) =>
     {
-        console.log("signing up user: ")
-        console.log(email)
-        this.auth.createUserWithEmailAndPassword(email,password)    
+        if(email!=null && password !=null)
+        {
+            this.auth.createUserWithEmailAndPassword(email,password)    
+        }
     }
     
     login = (email,password) =>
     {
-        this.auth.signInWithEmailAndPassword(email,password)
+        if(email!=null && password !=null)
+        {
+            this.auth.signInWithEmailAndPassword(email,password)
+        }
     }
 
     logout = () =>
