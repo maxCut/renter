@@ -1,5 +1,5 @@
 import React,{Component} from 'react'
-import {FirebaseContext} from '../firebase/f_index.js'
+import {FirebaseContext} from '../components/firebase'
 
 /*
  * Represents the desired username and password

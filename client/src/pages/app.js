@@ -5,6 +5,8 @@ import Login from './login.js';
 import SignUp from './signup.js'
 import Categories from './categories.js'
 import Header from './header/header.js'
+import * as ROUTES from '../constants/routes'
+import Navigation from '../components/Navigation'
 
 class App extends Component {
     render()
@@ -16,7 +18,7 @@ class App extends Component {
                 </header>
                 <div className = "page-container">
                     <Route exact path = "/" component = {Categories}/>
-                    <Route exact path = "/Login" component = {Login}/>
+                    <Route exact path = "/login" component = {Login}/>
                     <Route path = "/signup" component = {SignUp}/>
                 </div>
             </Router>

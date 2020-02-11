@@ -1,5 +1,6 @@
 import React,{Component} from 'react'
-import {FirebaseContext} from '../firebase/f_index.js'
+import {FirebaseContext} from '../components/firebase'
+import { Link } from 'react-router-dom';
 
 /*
  * Represents the inputed username and password
@@ -44,15 +45,20 @@ class Login extends Component {
                         {firebase =>
                         {
                             return(
+                            <div>
                             <form>
-                                <label for="uname"><b>Enter Desired Username</b></label>
+                                <label for="uname"><b>Enter Username</b></label>
                                 <input type="text" placeholder="Username" name ="username" onChange={this.changeFunc}></input>
-                                <label for="uname"><b>Enter Desired Password</b></label>
+                                <label for="uname"><b>Enter Password</b></label>
                                 <input type="password" placeholder="Password" name ="password" onChange = {this.changeFunc}></input>
                                 <button  onClick = {() => firebase.login(this.state.username,this.state.password)}> 
                                    Login 
                                 </button>
                             </form>
+                            <p>
+                                Don't have an account? <Link to='/signup'>Sign Up</Link>
+                            </p>
+                            </div>
                             )
                         }}
                     </FirebaseContext.Consumer>
