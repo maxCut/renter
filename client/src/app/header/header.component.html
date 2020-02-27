@@ -1,0 +1,13 @@
+<h1 *ngIf="authenticationService.userData | async">Hello {{ (authenticationService.userData | async)?.email }}</h1>
+
+<div *ngIf="!(authenticationService.userData | async)">
+    <input type="text" [(ngModel)]="email" placeholder="email">
+    <input type="password" [(ngModel)]="password" placeholder="password">
+
+    <button (click)="signUp()">Sign Up</button>
+
+    <button (click)="signIn()">Login</button>
+</div>
+
+<button (click)="signOut()" *ngIf="authenticationService.userData | async">Logout</button>
+

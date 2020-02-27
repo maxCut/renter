@@ -4,7 +4,7 @@ const DIST_DIR = path.join(__dirname, '/client/build');
 const webpack = require('webpack');
 
 module.exports = {
-  devtool: "source-map", //TODO set only for debug
+  mode: 'development',
   entry: `${SRC_DIR}/index.js`,
   output: {
     path: DIST_DIR,
