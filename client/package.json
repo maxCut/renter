@@ -33,6 +33,7 @@
     "@syncfusion/ej2-lists": "^17.4.51",
     "@syncfusion/ej2-popups": "^17.4.51",
     "@syncfusion/ej2-splitbuttons": "^17.4.51",
+    "@types/googlemaps": "^3.39.3",
     "zone.js": "^0.10.2"
   },
   "devDependencies": {}

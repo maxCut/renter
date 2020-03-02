@@ -17,6 +17,7 @@ import { FormsModule } from '@angular/forms';
 import { HomeComponent } from './home/home.component';
 import { HeaderComponent } from './header/header.component';
 import { SignUpComponent } from './sign-up/sign-up.component';
+import { GooglePlacesComponent } from './google-places/google-places.component';
 
 
 @NgModule({
@@ -25,6 +26,7 @@ import { SignUpComponent } from './sign-up/sign-up.component';
     HomeComponent,
     HeaderComponent,
     SignUpComponent,
+    GooglePlacesComponent,
   ],
   imports: [
     BrowserModule,

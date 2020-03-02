@@ -7,5 +7,5 @@ export const environment = {
     projectId: "renter-89374",
     storageBucket: "renter-89374.appspot.com",
     messagingSenderId: "342409210172"
-  }
+  },
 };
