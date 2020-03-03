@@ -1,4 +1,7 @@
 <p>home works!</p>
 <link href="https://cdn.syncfusion.com/ej2/material.css" rel="stylesheet" />
 <ejs-daterangepicker placeholder='Select a range' [startDate]="startDate" [endDate]="endDate"></ejs-daterangepicker>
-<GooglePlacesComponent (setAddress)="getAddress($event)" adressType="geocode">
+<GooglePlacesComponent (setAddress)="getAddress($event)" adressType="geocode"></GooglePlacesComponent>
+<div>
+<button (click) = "router.navigate(['/checkout'])">Checkout</button>
+</div>

@@ -18,6 +18,7 @@ import { HomeComponent } from './home/home.component';
 import { HeaderComponent } from './header/header.component';
 import { SignUpComponent } from './sign-up/sign-up.component';
 import { GooglePlacesComponent } from './google-places/google-places.component';
+import { CheckoutComponent } from './checkout/checkout.component';
 
 
 @NgModule({
@@ -27,6 +28,7 @@ import { GooglePlacesComponent } from './google-places/google-places.component';
     HeaderComponent,
     SignUpComponent,
     GooglePlacesComponent,
+    CheckoutComponent,
   ],
   imports: [
     BrowserModule,
