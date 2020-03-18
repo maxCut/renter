@@ -16,7 +16,6 @@ import { environment } from '../environments/environment';
 import { FormsModule } from '@angular/forms';
 import { HomeComponent } from './home/home.component';
 import { HeaderComponent } from './header/header.component';
-import { SignUpComponent } from './sign-up/sign-up.component';
 import { GooglePlacesComponent } from './google-places/google-places.component';
 import { CheckoutComponent } from './checkout/checkout.component';
 
@@ -26,7 +25,6 @@ import { CheckoutComponent } from './checkout/checkout.component';
     AppComponent,
     HomeComponent,
     HeaderComponent,
-    SignUpComponent,
     GooglePlacesComponent,
     CheckoutComponent,
   ],
