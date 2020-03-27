@@ -7,7 +7,7 @@ import { } from 'googlemaps';
     template: `<input class="input"
         type="text"
         [(ngModel)]="autocompleteInput"
-        #addresstext style="padding: 12px 20px; border: 1px solid #ccc; width: 400px">`
+        #addresstext style="padding: 5px 10px; border: 1px solid #ccc; width: 70vw">`
 })
 
 export class GooglePlacesComponent implements OnInit, AfterViewInit {
