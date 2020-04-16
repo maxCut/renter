@@ -1,20 +1,17 @@
 <link href="https://cdn.syncfusion.com/ej2/material.css" rel="stylesheet" />
 <div class = "home-page">
-<div class = "heading p-4" >
-    <h1 class="text-center">Welcome To Crasher</h1>
-</div>
 
-<div class = "description p-3">
+<div class = "description m-2 p-3">
     <img class = "icon-image" src = "assets/mattress.svg"/>
     <img class = "icon-image" src = "assets/parcel.svg"/>
     <h2 class = "text-center">Air Mattress Rentals for the Social Tourist</h2>
 </div>
-<div class ="date-picker m-3 p-3">
+<div class ="date-picker m-2 p-3">
     <h2> When is your trip?</h2>
     <ejs-daterangepicker placeholder='Select a range' [startDate]="startDate" [endDate]="endDate"></ejs-daterangepicker>
 </div>
 
-<div class = "location-picker m-3 p-3">
+<div class = "location-picker m-2 p-3">
     <h2> Where is your trip?</h2>
     <GooglePlacesComponent (setAddress)="getAddress($event)" adressType="geocode"></GooglePlacesComponent>
 </div>

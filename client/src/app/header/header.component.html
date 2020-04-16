@@ -1,13 +1,21 @@
-<h1 *ngIf="authenticationService.userData | async">Hello {{ (authenticationService.userData | async)?.email }}</h1>
+<div *ngIf="authenticationService.userData | async">
+        <a class = "navbar-brand" href = "#">Crasher</a>
+        <a class="nav-link" href="#">About</a>
 
-<div *ngIf="!(authenticationService.userData | async)">
-    <input type="text" [(ngModel)]="email" placeholder="email">
-    <input type="password" [(ngModel)]="password" placeholder="password">
-
-    <button (click)="signUp()">Create an Account</button>
-
-    <button (click)="signIn()">Login</button>
+        <h1>
+            Hello {{ (authenticationService.userData | async)?.email }}
+        </h1>
+        <a class="nav-link" href="#">Logout</a>
 </div>
 
-<button (click)="signOut()" *ngIf="authenticationService.userData | async">Logout</button>
+<div *ngIf="!(authenticationService.userData | async)">
+    <nav class = "navbar navbar-expand-md bg-dark navbar-dark static-top">
+        <a class = "navbar-brand" href = "#">Crasher</a>
+        <a class="nav-link" href="#">About</a>
+        <a class="nav-link" href="#">Create An Account</a>
+        <a class="nav-link" href="#">Login</a>
+    </nav>
+</div>
+
+
 

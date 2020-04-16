@@ -34,6 +34,8 @@
     "@syncfusion/ej2-popups": "^17.4.51",
     "@syncfusion/ej2-splitbuttons": "^17.4.51",
     "@types/googlemaps": "^3.39.3",
+    "bootstrap": "^3.3.7",
+    "ng-bootstrap": "^1.6.3",
     "zone.js": "^0.10.2"
   },
   "devDependencies": {}
