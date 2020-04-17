@@ -10,12 +10,11 @@
 
 <div *ngIf="!(authenticationService.userData | async)">
     <nav class = "navbar navbar-expand-md bg-dark navbar-dark static-top">
-        <a class = "navbar-brand" href = "#">Crasher</a>
-        <a class="nav-link" href="#">About</a>
-        <a class="nav-link" href="#">Create An Account</a>
-        <a class="nav-link" href="#">Login</a>
+        <a class = "navbar-brand"  routerLink ="/home" routerLinkActive = "active">Crasher</a>
+        <a class="nav-link" routerLink ="/about" routerLinkActive = "active">About</a>
+        <a class="nav-link" routerLink ="/about" >Create An Account</a>
+        <a class="nav-link" routerLink ="/about" >Login</a>
     </nav>
 </div>
-
 
 

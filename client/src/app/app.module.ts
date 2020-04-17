@@ -19,6 +19,7 @@ import { HeaderComponent } from './header/header.component';
 import { GooglePlacesComponent } from './google-places/google-places.component';
 import { CheckoutComponent } from './checkout/checkout.component';
 import { FooterComponent } from './footer/footer.component';
+import { AboutComponent } from './about/about.component';
 
 
 @NgModule({
@@ -29,6 +30,7 @@ import { FooterComponent } from './footer/footer.component';
     GooglePlacesComponent,
     CheckoutComponent,
     FooterComponent,
+    AboutComponent,
   ],
   imports: [
     BrowserModule,
